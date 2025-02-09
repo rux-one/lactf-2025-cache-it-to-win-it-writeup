@@ -1,6 +1,6 @@
 # LA CTF 2025 - web/cache it to win it!
 
-!("assets/chal.png")
+![](assets/chal.png)
 
 The challenge was to exploit the caching mechanism of a web application (see `original_challenge` dir) to get the flag. The app generates a random uuid and stores in the DB + returns it to the user as a cookie. Now upon visitting the `/check` page a counter in the DB gets incremented for requested UUID. The goal of the game is to get the counter down to 0. But requests are cached so the same ID can actually get us down to 99 and it sticks there no matter how many times the page is refreshed.
 
