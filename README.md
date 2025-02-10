@@ -31,6 +31,15 @@ The program then simply visits the `/check` subpage with each variation until it
 
 # Usage
 
+Set up the challenge locally on port 5000 (default)
+
+```
+cd original_challenge
+docker compose up
+```
+
+Run the "solver".
+
 ```bash
 cd exploit
 cargo run
